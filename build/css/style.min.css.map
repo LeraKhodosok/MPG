@@ -1,0 +1,1 @@
+{"version":3,"file":"./css/style.min.css","mappings":"AAAA;EACE;ACCF","sources":["webpack://marvel/./src/scss/header.scss","webpack://marvel/./src/scss/main.scss"],"sourcesContent":["body {\r\n  color: red;\r\n}","body {\n  color: red;\n}"],"names":[],"sourceRoot":""}
