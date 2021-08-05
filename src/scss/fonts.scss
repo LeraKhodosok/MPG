@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Alata';
+  src: url('../fonts/Alata-Regular.eot');
+  src: url('../fonts/Alata-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Alata-Regular.woff2') format('woff2'),
+  url('../fonts/Alata-Regular.woff') format('woff'),
+  url('../fonts/Alata-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  src: url('../fonts/SofiaProUltraLight.eot');
+  src: local('Sofia Pro UltraLight'), local('SofiaProUltraLight'),
+  url('../fonts/SofiaProUltraLight.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SofiaProUltraLight.woff2') format('woff2'),
+  url('../fonts/SofiaProUltraLight.woff') format('woff'),
+  url('../fonts/SofiaProUltraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro Regular';
+  src: url('../fonts/SofiaProRegular.eot');
+  src: local('Sofia Pro Regular'), local('SofiaProRegular'),
+  url('../fonts/SofiaProRegular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SofiaProRegular.woff2') format('woff2'),
+  url('../fonts/SofiaProRegular.woff') format('woff'),
+  url('../fonts/SofiaProRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sofia Pro Medium';
+  src: url('../fonts/SofiaProMedium.eot');
+  src: local('Sofia Pro Medium'), local('SofiaProMedium'),
+  url('../fonts/SofiaProMedium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SofiaProMedium.woff2') format('woff2'),
+  url('../fonts/SofiaProMedium.woff') format('woff'),
+  url('../fonts/SofiaProMedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+

@@ -1,8 +1,269 @@
 /*!*********************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/scss/main.scss ***!
   \*********************************************************************************************************************************************************************/
-body {
-  color: red;
+@font-face {
+  font-family: "Alata";
+  src: url("../fonts/Alata-Regular.eot");
+  src: url("../fonts/Alata-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Alata-Regular.woff2") format("woff2"), url("../fonts/Alata-Regular.woff") format("woff"), url("../fonts/Alata-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("../fonts/SofiaProUltraLight.eot");
+  src: local("Sofia Pro UltraLight"), local("SofiaProUltraLight"), url("../fonts/SofiaProUltraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/SofiaProUltraLight.woff2") format("woff2"), url("../fonts/SofiaProUltraLight.woff") format("woff"), url("../fonts/SofiaProUltraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sofia Pro Regular";
+  src: url("../fonts/SofiaProRegular.eot");
+  src: local("Sofia Pro Regular"), local("SofiaProRegular"), url("../fonts/SofiaProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/SofiaProRegular.woff2") format("woff2"), url("../fonts/SofiaProRegular.woff") format("woff"), url("../fonts/SofiaProRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sofia Pro Medium";
+  src: url("../fonts/SofiaProMedium.eot");
+  src: local("Sofia Pro Medium"), local("SofiaProMedium"), url("../fonts/SofiaProMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/SofiaProMedium.woff2") format("woff2"), url("../fonts/SofiaProMedium.woff") format("woff"), url("../fonts/SofiaProMedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+.main {
+  background: linear-gradient(360deg, #000000 4.66%, rgba(0, 0, 0, 0) 76.78%), url(/src/img/main.png);
+  background-size: cover;
+  height: 1100px;
+}
+
+.lines {
+  position: absolute;
+  left: 14%;
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+}
+
+.line1 {
+  position: relative;
+  width: 25%;
+  height: 2000px;
+  border-right: 1px solid darkgray;
+  border-left: 1px solid darkgray;
+  opacity: 0.3;
+}
+
+.line2 {
+  position: relative;
+  width: 25%;
+  height: 2000px;
+  border-right: 1px solid darkgray;
+  opacity: 0.3;
+}
+
+.line3 {
+  position: relative;
+  width: 25%;
+  height: 2000px;
+  border-right: 1px solid darkgray;
+  opacity: 0.3;
+}
+
+.line4 {
+  position: relative;
+  width: 25%;
+  height: 2000px;
+  border-right: 1px solid darkgray;
+  opacity: 0.3;
+}
+
+.main_container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main_logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.main_logo_circle {
+  position: absolute;
+  left: calc(50% - 54.42px/2 - 525.92px);
+  top: 37px;
+}
+
+.main_logo_letter {
+  position: absolute;
+  left: calc(50% - 44.3px/2 - 532.85px);
+  top: 49.13px;
+}
+
+.main_logo_name {
+  position: absolute;
+  left: calc(50% - 80.05px/2 - 449.54px);
+  top: 49.16px;
+}
+
+.main_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.main_link {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main_link_about:hover {
+  text-decoration: none;
+  line-height: 36px;
+  border-bottom: 1px solid #F6D330;
+}
+
+.main_link_about {
+  text-decoration: none;
+  font-family: "Sofia Pro Medium", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.main_link_services:hover {
+  text-decoration: none;
+  line-height: 36px;
+  border-bottom: 1px solid #F6D330;
+}
+
+.main_link_services {
+  text-decoration: none;
+  font-family: "Sofia Pro Medium", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.main_link_contact:hover {
+  text-decoration: none;
+  line-height: 36px;
+  border-bottom: 1px solid #F6D330;
+}
+
+.main_link_contact {
+  text-decoration: none;
+  font-family: "Sofia Pro Medium", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.main_text {
+  padding-top: 260px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_title {
+  font-family: Alata, sans-serif;
+  font-size: 115px;
+  line-height: 130px;
+  margin-bottom: 30px;
+  font-weight: normal;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.main_info {
+  font-family: Sofia Pro, sans-serif;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.main_btn {
+  font-family: Sofia Pro Regular, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 14px;
+  width: 186px;
+  height: 48px;
+  text-align: center;
+  margin-top: 50px;
+  background: #F9D023;
+}
+
+.main_btn_container {
+  position: relative;
+  padding-left: 3px;
+  width: 30px;
+}
+
+.main_btn_logo1 {
+  position: relative;
+  bottom: 3px;
+}
+
+.main_btn_logo2 {
+  position: relative;
+  right: 4px;
+  top: 1px;
+}
+
+.main_btn_logo3 {
+  position: relative;
+  right: 14px;
+  bottom: 1px;
+}
+
+.main_btn_logo4 {
+  position: relative;
+  right: 16px;
+  bottom: 5px;
+}
+
+.main_btn_logo5 {
+  position: relative;
+  right: 26px;
+}
+
+.about_title {
+  font-size: 90px;
+  color: black;
+  text-align: left;
+}
+
+.about_hr_yellow {
+  width: 6px;
+  height: 100px;
+  background: #F6D330;
+}
+
+.about_text {
+  font-size: 18px;
+  color: black;
+  text-align: right;
+}
+
+.about {
+  background-color: #F2F2F2;
+}
+
+.services {
+  background: #F6D330;
+}
+
+.services_title {
+  font-size: 10px;
+  color: black;
+  text-align: left;
 }
 
 /*# sourceMappingURL=style.min.css.map*/

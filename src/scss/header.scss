@@ -1,3 +1,223 @@
-body {
-  color: red;
+.main {
+  background: linear-gradient(360deg, #000000 4.66%, rgba(0, 0, 0, 0) 76.78%), url(/src/img/main.png);
+  background-size: cover;
+
+  height: 1100px;
 }
+
+.lines {
+  position: absolute;
+  left: 14%;
+  width: 1200px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.line1 {
+  position: relative;
+  width: 25%;
+  height: 2000px;
+
+  border-right: 1px solid darkgray;
+  border-left: 1px solid darkgray;
+  opacity: 0.3;
+}
+
+.line2 {
+  position: relative;
+  width: 25%;
+  height: 2000px;
+
+  border-right: 1px solid darkgray;
+  opacity: 0.3;
+}
+
+.line3 {
+  position: relative;
+  width: 25%;
+  height: 2000px;
+
+  border-right: 1px solid darkgray;
+  opacity: 0.3;
+}
+
+.line4 {
+  position: relative;
+  width: 25%;
+  height: 2000px;
+
+  border-right: 1px solid darkgray;
+  opacity: 0.3;
+}
+
+.main_container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main_logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.main_logo_circle {
+  position: absolute;
+  left: calc(50% - 54.42px/2 - 525.92px);
+  top: 37px;
+}
+
+.main_logo_letter {
+  position: absolute;
+  left: calc(50% - 44.3px/2 - 532.85px);
+  top: 49.13px;
+}
+
+.main_logo_name {
+  position: absolute;
+  left: calc(50% - 80.05px/2 - 449.54px);
+  top: 49.16px;
+}
+
+.main_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.main_link {
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main_link_about:hover {
+  text-decoration: none;
+  line-height: 36px;
+  border-bottom: 1px solid #F6D330;
+}
+
+.main_link_about {
+  text-decoration: none;
+
+  font-family: "Sofia Pro Medium", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+
+  color: #000000;
+}
+
+.main_link_services:hover {
+  text-decoration: none;
+  line-height: 36px;
+  border-bottom: 1px solid #F6D330;
+}
+
+.main_link_services {
+  text-decoration: none;
+
+  font-family: "Sofia Pro Medium", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+
+  color: #000000;
+}
+
+.main_link_contact:hover {
+  text-decoration: none;
+  line-height: 36px;
+  border-bottom: 1px solid #F6D330;
+}
+
+.main_link_contact {
+  text-decoration: none;
+
+  font-family: "Sofia Pro Medium", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+
+  color: #000000;
+}
+
+.main_text {
+  padding-top: 260px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_title {
+  font-family: Alata,sans-serif;
+  font-size: 115px;
+  line-height: 130px;
+  margin-bottom: 30px;
+  font-weight: normal;
+
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.main_info {
+  font-family: Sofia Pro, sans-serif;
+  font-size: 25px;
+  line-height: 35px;
+
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.main_btn {
+  font-family: Sofia Pro Regular, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 14px;
+  width: 186px;
+  height: 48px;
+
+  text-align: center;
+
+  margin-top: 50px;
+
+  background: #F9D023;
+}
+
+.main_btn_container {
+  position: relative;
+  padding-left: 3px;
+  width: 30px;
+}
+
+.main_btn_logo1 {
+  position: relative;
+  bottom: 3px;
+}
+
+.main_btn_logo2 {
+  position: relative;
+  right: 4px;
+  top: 1px;
+}
+
+.main_btn_logo3 {
+  position: relative;
+  right: 14px;
+  bottom: 1px;
+}
+
+.main_btn_logo4 {
+  position: relative;
+  right: 16px;
+  bottom: 5px;
+}
+
+.main_btn_logo5 {
+  position: relative;
+  right: 26px;
+}
+
