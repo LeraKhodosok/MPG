@@ -11144,10 +11144,16 @@ textarea.form-control-lg {
   font-weight: 500;
   font-style: normal;
 }
+@font-face {
+  font-family: "Sofia Pro Bold";
+  src: url("../fonts/SofiaProBold.eot");
+  src: local("Sofia Pro Bold"), local("SofiaProBold"), url("../fonts/SofiaProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SofiaProBold.woff2") format("woff2"), url("../fonts/SofiaProBold.woff") format("woff"), url("../fonts/SofiaProBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
 .main {
   background: linear-gradient(360deg, #000000 4.66%, rgba(0, 0, 0, 0) 76.78%), url(../img/main.png);
   background-size: cover;
-  height: 1100px;
 }
 
 .lines {
@@ -11159,43 +11165,10 @@ textarea.form-control-lg {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 1199.98px) {
-  .lines {
-    display: none;
-  }
-}
 .lines .line {
   width: 1px;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.1);
-}
-
-.main_container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.main_logo {
-  display: flex;
-  flex-direction: row;
-}
-
-.main_logo_circle {
-  position: absolute;
-  left: calc(50% - 54.42px/2 - 525.92px);
-  top: 37px;
-}
-
-.main_logo_letter {
-  position: absolute;
-  left: calc(50% - 44.3px/2 - 532.85px);
-  top: 49.13px;
-}
-
-.main_logo_name {
-  position: absolute;
-  left: calc(50% - 80.05px/2 - 449.54px);
-  top: 49.16px;
 }
 
 .main_header {
@@ -11212,9 +11185,18 @@ textarea.form-control-lg {
   flex-direction: row;
   justify-content: space-between;
 }
+.main_link a {
+  text-decoration: none;
+}
 .main_link .link {
   position: relative;
   margin-left: 66px;
+  color: black;
+  font-family: "Sofia Pro Medium", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 18px;
 }
 .main_link .link:before {
   content: "";
@@ -11240,151 +11222,270 @@ textarea.form-control-lg {
   margin-left: 0;
 }
 
-.main_link_about:hover {
-  text-decoration: none;
-  line-height: 36px;
-  border-bottom: 1px solid #F6D330;
-}
-
-.main_link_about {
-  text-decoration: none;
-  font-family: "Sofia Pro Medium", sans-serif;
-  font-size: 18px;
-  line-height: 18px;
-  color: #000000;
-}
-
-.main_link_services {
-  text-decoration: none;
-  font-family: "Sofia Pro Medium", sans-serif;
-  font-size: 18px;
-  line-height: 18px;
-  color: #000000;
-}
-
-.main_link_contact:hover {
-  text-decoration: none;
-  line-height: 36px;
-  border-bottom: 1px solid #F6D330;
-}
-
-.main_link_contact {
-  text-decoration: none;
-  font-family: "Sofia Pro Medium", sans-serif;
-  font-size: 18px;
-  line-height: 18px;
-  color: #000000;
-}
-
 .main_text {
-  padding-top: 260px;
-  padding-bottom: 100px;
+  padding-top: 378px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.main_title {
+.main_text .text {
   line-height: 130px;
-  margin-bottom: 30px;
+  margin-bottom: 41px;
   font-weight: normal;
   text-align: center;
-  color: #FFFFFF;
-  font-family: Alata;
+  font-family: Alata, sans-serif;
   font-size: 115px;
-}
-
-.main_info {
-  font-family: Sofia Pro, sans-serif;
-  font-size: 25px;
-  line-height: 35px;
-  text-align: center;
   color: #FFFFFF;
 }
-
-.main_btn {
-  font-family: Sofia Pro Regular, sans-serif;
+.main_text .info {
+  font-family: "Sofia Pro", sans-serif;
+  font-size: 25px;
+  color: #FFFFFF;
+  line-height: 35px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 79px;
+}
+.main_text .btn {
+  font-family: "Sofia Pro Medium", sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 14px;
-  width: 186px;
   height: 48px;
-  text-align: center;
-  margin-top: 50px;
   background: #F9D023;
+  width: 196px;
+  margin-bottom: 236px;
+}
+.main_text .logo {
+  margin-bottom: 3px;
+}
+.main_text .scroll {
+  font-family: "Sofia Pro", sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 14px;
+  font-weight: 300;
+  margin-bottom: 55px;
 }
 
-.main_btn_container {
-  position: relative;
-  padding-left: 3px;
-  width: 30px;
+.section {
+  background: #fff;
+  padding-top: 93px;
 }
 
-.main_btn_logo1 {
-  position: relative;
-  bottom: 3px;
+.section_title:after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 6px;
+  background-color: #F6D330;
+  bottom: -50px;
+  left: 0;
 }
 
-.main_btn_logo2 {
-  position: relative;
-  right: 4px;
-  top: 1px;
+.section_about_info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 55px;
+  padding-bottom: 140px;
+}
+.section_about_info .about_img {
+  margin-right: 68px;
+}
+.section_about_info .text {
+  font-family: "Sofia Pro Regular", sans-serif;
+  font-size: 18px;
+  color: #0B0D21;
+  line-height: 26px;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 20px;
 }
 
-.main_btn_logo3 {
-  position: relative;
-  right: 14px;
-  bottom: 1px;
+.section_services {
+  padding-top: 101px;
+  padding-bottom: 44px;
+  background-color: #F6D330;
+}
+.section_services .section_title.black {
+  margin-bottom: 95px;
+}
+.section_services .section_title:after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 6px;
+  background-color: #FFFFFF;
+  bottom: -50px;
+  left: 0;
+}
+.section_services.text {
+  font-family: "Sofia Pro Regular", sans-serif;
+  font-size: 18px;
+  color: #0B0D21;
+  line-height: 26px;
+  width: 837px;
+  padding: 0;
+  text-align: left;
+  margin-bottom: 47px;
 }
 
-.main_btn_logo4 {
-  position: relative;
-  right: 16px;
-  bottom: 5px;
+.services_table {
+  display: flex;
+  justify-content: space-between;
+}
+.services_table .table_title {
+  font-family: "Sofia Pro Bold", sans-serif;
+  font-size: 40px;
+  color: #000000;
+  line-height: 42px;
+  width: 300px;
+  margin-bottom: 33px;
+}
+.services_table .table_list {
+  padding: 0;
+  margin: 0;
+}
+.services_table li {
+  list-style-type: none;
+  font-family: "Sofia Pro Regular", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  padding-bottom: 10px;
+  text-align: left;
+}
+.services_table li:before {
+  content: url("../img/square.png");
+  color: #FFFFFF;
+  margin: 0;
+  padding-right: 15px;
+}
+.services_table .arrow {
+  margin-top: 41px;
+  margin-left: 20px;
+  margin-bottom: 67px;
 }
 
-.main_btn_logo5 {
-  position: relative;
-  right: 26px;
-}
-
-.section .title {
-  color: red;
-}
-.section .title.black {
-  color: black;
-}
-
-.about_title {
+.section_title {
+  font-family: Alata, sans-serif;
   font-size: 90px;
   color: black;
   text-align: left;
+  margin-bottom: 50px;
+  position: relative;
 }
-
-.about_hr_yellow {
-  width: 6px;
-  height: 100px;
-  background: #F6D330;
-}
-
-.about_text {
-  font-size: 18px;
+.section_title.black {
   color: black;
-  text-align: right;
 }
 
-.about {
-  background-color: #F2F2F2;
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.services {
-  background: #F6D330;
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .lines {
+    display: none;
+  }
+
+  .main_link {
+    display: none;
+  }
+
+  .main_text .text {
+    font-family: Alata, sans-serif;
+    font-size: 50px;
+    color: #FFFFFF;
+  }
+  .main_text .info {
+    font-family: "Sofia Pro", sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 20px;
+    font-weight: 300;
+  }
+  .main_text .btn {
+    margin-bottom: 70px;
+  }
+}
+.section_contact {
+  background-color: #000000;
+  padding-top: 101px;
+  padding-bottom: 288px;
+}
+.section_contact .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
 }
 
-.services_title {
-  font-size: 10px;
-  color: black;
-  text-align: left;
+.section_title.white {
+  margin-bottom: 95px;
+  color: #FFFFFF;
+}
+.section_title:after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 6px;
+  background-color: #F6D330;
+  bottom: -40px;
+  left: 0;
+}
+
+.container_email {
+  margin-right: 110px;
+}
+.container_email .contact_email_white {
+  font-family: "Sofia Pro Bold", sans-serif;
+  font-size: 40px;
+  color: #FFFFFF;
+  line-height: 42px;
+  width: 300px;
+}
+.container_email .contact_email_yellow {
+  font-family: "Sofia Pro Bold", sans-serif;
+  font-size: 40px;
+  color: #F6D330;
+  line-height: 42px;
+  width: 300px;
+}
+
+.user_contact_info {
+  padding-top: 53px;
+  width: 445px;
+}
+.user_contact_info .user_contact_title {
+  font-family: "Sofia Pro Bold", sans-serif;
+  font-size: 40px;
+  color: #FFFFFF;
+  line-height: 42px;
+  margin-bottom: 41px;
+  width: 300px;
+}
+.user_contact_info .input {
+  width: 445px;
+  height: 48px;
+  margin-bottom: 15px;
+  display: block;
+  font-family: "Sofia Pro Bold", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  padding-left: 20px;
+}
+.user_contact_info .btn_send {
+  font-family: "Sofia Pro Medium", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 14px;
+  height: 48px;
+  background: #F9D023;
+  width: 272px;
+  margin-left: 173px;
+}
+.user_contact_info .btn_send .logo {
+  margin-bottom: 3px;
 }
 
 /*# sourceMappingURL=style.min.css.map*/

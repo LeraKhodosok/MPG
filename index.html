@@ -16,42 +16,125 @@
 <div class="main">
     <div class="container">
         <header class="main_header">
-            <div class="main_logo">
-                <img class="" src="./src/img/logo.svg" alt="">
-            </div>
+            <img src="./src/img/logo.svg" alt="">
             <nav class="main_link">
-                <a class="main_link_about link" href="">About</a>
-                <a class="main_link_services link" href="">Services</a>
-                <a class="main_link_contact link" href="">Contact</a>
+                <a class="link" href="#about_block">About</a>
+                <a class="link" href="#services_block">Services</a>
+                <a class="link" href="#contact_block">Contact</a>
             </nav>
         </header>
         <div class="main_text">
-            <h1 class="main_title">Marvel Power Group</h1>
-            <p class="main_info">
-
+            <h1 class="text">Marvel Power Group</h1>
+            <p class="info">
                 Marvel Power Group is a boutique consulting firm
                 with a fresh, markets-based approach to value
                 creation. We offer services to clients in energy,
                 water, manufacturing and transportation sectors.
             </p>
-            <button class="main_btn">
+            <button class="btn">
                 <b>CONTACT US</b>
-                <span class="main_btn_container">
-                    <img class="main_btn_logo1" src="./src/img/1p.png" alt="">
-                    <img class="main_btn_logo2" src="./src/img/2p_black.png" alt="">
-                    <img class="main_btn_logo3" src="./src/img/2p_yellow.png" alt="">
-                    <img class="main_btn_logo4" src="./src/img/1p.png" alt="">
-                    <img class="main_btn_logo5" src="./src/img/1p.png" alt="">
-                </span>
+                <img src="./src/img/btn_logo.png" alt="" class="logo">
             </button>
+            <p class="scroll">Scroll for more</p>
         </div>
     </div>
 </div>
 
 <section class="section">
-    <h2 class="title black">
+    <div class="container" id="about_block">
+        <h2 class="section_title black">About Us</h2>
+        <div class="section_about_info">
+            <img class="about_img" src="./src/img/about_img.jpg" alt="">
+            <div class="section_about">
+                <p class="text">
+                    Our dynamic, solutions-oriented
+                    team brings decades of relevant transactional, analytical
+                    and regulatory experience to supporting our clients’ unique agendas.
+                </p>
+                <p class="text">
+                    We are experienced practitioners who have run companies, successfully
+                    originated and closed complex deals, advocated and negotiated favorable
+                    policy and advanced technological innovation and climate leadership.
+                </p>
+                <p class="text">
+                    We specialize in structuring balanced solutions for all affected
+                    stakeholders and uncovering economic opportunities in otherwise opaque
+                    environments.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 
-    </h2>
+<section class="section_services">
+    <div class="container" id="services_block">
+        <h2 class="section_title black">Services</h2>
+        <p class="section_services text">
+            Our clients are at the forefront of energy transition and innovation.
+            Their task is complex: balance reliability and cost effectiveness with
+            new customer demands, investment decisions, decarbonization goals and
+            an evolving menu of new technologies. We understand the task and bring
+            deep expertise to addressing these challenges.
+        </p>
+        <div class="services_table">
+            <div class="services_table_column1">
+                <h3 class="table_title">Enterprise Strategy</h3>
+                <ul class="table_list">
+                    <li>Procurement and investment diligence</li>
+                    <li>Customer engagement and retention</li>
+                    <li>Renewable, DER, and EV program structuring</li>
+                    <li>Reliability planning and reporting</li>
+                </ul>
+                <a href=""><img src="./src/img/arrow.png" alt="" class="arrow"></a>
+            </div>
+            <div class="services_table_column2">
+                <h3 class="table_title">Wholesale Power</h3>
+                <ul class="table_list">
+                    <li>Commodity advisory and RFPs</li>
+                    <li>Energy, capacity, REC, RIN, and LCFS placement</li>
+                    <li>Enterprise PPA structuring</li>
+                    <li>Contract extensions and re-packaging</li>
+                </ul>
+                <a href=""><img src="./src/img/arrow.png" alt="" class="arrow"></a>
+            </div>
+            <div class="services_table_column3">
+                <h3 class="table_title">Market Development</h3>
+                <ul class="table_list">
+                    <li>New venture setup</li>
+                    <li>Demand planning and acquisition</li>
+                    <li>Project development and regulatory support</li>
+                    <li>Partnership structuring</li>
+                </ul>
+                <a href=""><img src="./src/img/arrow.png" alt="" class="arrow"></a>
+            </div>
+        </div>
+        <p class="section_services text">
+            Our clients are time constrained and under-resourced. Agendas shift,
+            budgets move and priorities change. We understand. We are agile, creative
+            and immediately responsive to your various working styles, governance
+            requirements and evolving needs.
+        </p>
+    </div>
+</section>
+
+<section class="section_contact">
+    <div class="container" id="contact_block">
+        <div class="container_email">
+            <h2 class="section_title white">Contact</h2>
+            <h3 class="contact_email_white">Email us here:</h3>
+            <h3 class="contact_email_yellow">info@marvelpowergroup.com</h3>
+        </div>
+        <div class="user_contact_info">
+            <h3 class="user_contact_title">Stay in the loop by getting on our mailing list</h3>
+            <form action="" class="form">
+                <input type="text" placeholder="NAME *" class="input">
+                <input type="text" placeholder="E-MAIL *" class="input">
+            </form>
+            <button class="btn_send"><b>SEND</b>
+                <img src="./src/img/btn_logo.png" alt="" class="logo">
+            </button>
+        </div>
+    </div>
 </section>
 
     <script src="build/js/main.min.js"></script>

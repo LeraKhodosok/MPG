@@ -1,21 +1,54 @@
-.about_title {
-  font-size: 90px;
-  color: black;
-  text-align: left;
+@mixin font_titles($fz, $clr) {
+  font-family: Alata, sans-serif;
+  font-size: $fz;
+  color: $clr;
 }
 
-.about_hr_yellow {
+@mixin font_info($fz, $clr, $line-height) {
+  font-family: "Sofia Pro Regular",sans-serif;
+  font-size: $fz;
+  color: $clr;
+  line-height: $line-height;
+  font-weight: 300;
+}
+
+@mixin line($clr) {
   width: 6px;
   height: 100px;
-  background: #F6D330;
+  color: $clr;
 }
 
-.about_text {
-  font-size: 18px;
-  color: black;
-  text-align: right;
+.section {
+  background: #fff;
+  padding-top: 93px;
 }
 
-.about {
-  background-color: #F2F2F2;
+.section_title {
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 6px;
+    background-color: #F6D330;
+    bottom: -50px;
+    left: 0;
+  }
+}
+
+.section_about_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 55px;
+    padding-bottom: 140px;
+
+    .about_img {
+      margin-right: 68px;
+    }
+
+    .text {
+        @include font_info(18px, #0B0D21, 26px);
+        text-align: left;
+        margin-bottom: 20px;
+    }
 }

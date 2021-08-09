@@ -46,3 +46,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Sofia Pro Bold';
+  src: url('../fonts/SofiaProBold.eot');
+  src: local('Sofia Pro Bold'), local('SofiaProBold'),
+  url('../fonts/SofiaProBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SofiaProBold.woff2') format('woff2'),
+  url('../fonts/SofiaProBold.woff') format('woff'),
+  url('../fonts/SofiaProBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}

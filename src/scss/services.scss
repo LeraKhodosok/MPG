@@ -1,10 +1,84 @@
-.services {
-  background: #F6D330;
+@mixin font_text($fz, $clr, $line-height) {
+  font-family: "Sofia Pro Regular", sans-serif;
+  font-size: $fz;
+  color: $clr;
+  line-height: $line-height;
 }
 
-.services_title {
-  font-size: 10px;
-  color: black;
-  text-align: left;
+@mixin font_tables($fz) {
+  font-family: "Sofia Pro Bold",sans-serif;
+  font-size: $fz;
+  color: #000000;
+  line-height: 42px;
 }
+
+.section_services {
+  padding-top: 101px;
+  padding-bottom: 91-47px;
+  background-color: #F6D330;
+
+  .section_title {
+
+    &.black {
+      margin-bottom: 95px;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 6px;
+      background-color: #FFFFFF;
+      bottom: -50px;
+      left: 0;
+    }
+  }
+
+  &.text {
+    @include font_text(18px, #0B0D21, 26px);
+    width: 837px;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 47px;
+  }
+}
+
+.services_table {
+  display: flex;
+  justify-content: space-between;
+
+  .table_title {
+    @include font_tables(40px);
+    width: 300px;
+    margin-bottom: 33px;
+  }
+
+  .table_list {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    list-style-type: none;
+    font-family: "Sofia Pro Regular", sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+  }
+
+  li:before {
+    content: url("../img/square.png");
+    color: #FFFFFF;
+    margin: 0;
+    padding-right: 15px;
+  }
+
+  .arrow {
+    margin-top: 41px;
+    margin-left: 20px;
+    margin-bottom: 67px;
+  }
+}
+
 

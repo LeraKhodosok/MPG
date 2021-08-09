@@ -1,0 +1,94 @@
+@mixin font_titles($fz, $clr) {
+  font-family: "Sofia Pro Bold",sans-serif;
+  font-size: $fz;
+  color: $clr;
+  line-height: 42px;
+}
+
+@mixin btn-style($clr, $width) {
+  font-family: "Sofia Pro Medium", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 14px;
+  height: 48px;
+
+  background: #F9D023;
+  width: $width;
+}
+
+.section_contact {
+  background-color: #000000;
+  padding-top: 101px;
+  padding-bottom: 288px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+}
+
+.section_title {
+
+  &.white {
+    margin-bottom: 95px;
+    color: #FFFFFF;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 6px;
+    background-color: #F6D330;
+    bottom: -40px;
+    left: 0;
+  }
+}
+
+.container_email {
+  margin-right: 110px;
+
+  .contact_email_white {
+    @include font_titles(40px, #FFFFFF);
+    width: 300px;
+  }
+
+  .contact_email_yellow {
+    @include font_titles(40px, #F6D330);
+    width: 300px;
+  }
+}
+
+.user_contact_info {
+  padding-top: 154-101px;
+  width: 445px;
+
+  .user_contact_title {
+    @include font_titles(40px, #FFFFFF);
+    margin-bottom: 41px;
+    width: 300px;
+  }
+
+  .input {
+    width: 445px;
+    height: 48px;
+    margin-bottom: 15px;
+
+    display: block;
+
+    font-family: "Sofia Pro Bold", sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    padding-left: 20px;
+  }
+
+  .btn_send {
+    @include btn-style(#F6D330, 272px);
+    margin-left: 173px;
+
+    .logo {
+      margin-bottom: 3px;
+    }
+  }
+}

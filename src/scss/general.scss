@@ -1,0 +1,58 @@
+@mixin font_titles($fz, $clr) {
+  font-family: Alata, sans-serif;
+  font-size: $fz;
+  color: $clr;
+}
+
+@mixin font_info($fz, $clr, $line-height) {
+  font-family: "Sofia Pro", sans-serif;
+  font-size: $fz;
+  color: $clr;
+  line-height: $line-height;
+  font-weight: 300;
+}
+
+.section_title {
+  @include font_titles(90px, black);
+  text-align: left;
+  margin-bottom: 50px;
+  position: relative;
+
+  &.black {
+    color: black;
+  }
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+
+  .lines {
+    display: none;
+  }
+
+  .main_link {
+    display: none;
+  }
+
+  .main_text{
+
+    .text {
+      @include font_titles(50px, #FFFFFF);
+    }
+
+    .info {
+      @include font_info(14px, #FFFFFF, 20px)
+    }
+
+    .btn {
+      margin-bottom: 70px;
+    }
+  }
+
+
+
+}
