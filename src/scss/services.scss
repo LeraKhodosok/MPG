@@ -29,8 +29,9 @@
   padding-bottom: 92px;
   background-color: #F6D330;
 
-  @media(max-width: 576px) {
-    padding-bottom: 62-56px;
+  @media (max-width: 991.98px) {
+    padding-top: 91px;
+    padding-bottom: 56px;
   }
 
   @media(max-width: 767.98px) {
@@ -38,9 +39,8 @@
     padding-bottom: 36px;
   }
 
-  @media (max-width: 991.98px) {
-    padding-top: 91px;
-    padding-bottom: 56px;
+  @media(max-width: 576px) {
+    padding-bottom: 62-56px;
   }
 
   .section_title_services {
@@ -50,9 +50,9 @@
     position: relative;
     margin-bottom: 113px;
 
-    @media(max-width: 576px) {
-      @include font_titles(40px, black);
-      margin-bottom: 63px;
+    @media (max-width: 991.98px) {
+      @include font_titles(60px, black);
+      margin-bottom: 113px;
     }
 
     @media(max-width: 767.98px) {
@@ -60,9 +60,9 @@
       margin-bottom: 93px;
     }
 
-    @media (max-width: 991.98px) {
-      @include font_titles(60px, black);
-      margin-bottom: 113px;
+    @media(max-width: 576px) {
+      @include font_titles(40px, black);
+      margin-bottom: 63px;
     }
 
     &:after {
@@ -74,18 +74,18 @@
       bottom: -62px;
       left: 0;
 
-      @media(max-width: 576px) {
-        bottom: -35px;
-        width: 65px;
-        height: 4px;
+      @media (max-width: 991.98px) {
+        bottom: -62px;
       }
 
       @media(max-width: 767.98px) {
         bottom: -45px;
       }
 
-      @media (max-width: 991.98px) {
-        bottom: -62px;
+      @media(max-width: 576px) {
+        bottom: -35px;
+        width: 65px;
+        height: 4px;
       }
     }
   }
@@ -94,10 +94,11 @@
     @include font_text(18px, #0B0D21, 26px);
     width: 837px;
     padding: 0;
+    margin-bottom: 47px;
     text-align: left;
 
-    @media(max-width: 576px) {
-      @include font_text(14px, #0B0D21, 24px);
+    @media (max-width: 991.98px) {
+      @include font_text(18px, #0B0D21, 26px);
       width: 100%;
       margin-bottom: 56px;
     }
@@ -106,21 +107,21 @@
       @include font_text(16px, #0B0D21, 24px);
       width: 100%;
       margin-bottom: 56px;
-  }
+    }
 
-    @media (max-width: 991.98px) {
-      @include font_text(18px, #0B0D21, 26px);
+    @media(max-width: 576px) {
+      @include font_text(14px, #0B0D21, 24px);
       width: 100%;
       margin-bottom: 56px;
     }
-}
+  }
 
 .services_table {
   display: flex;
   justify-content: space-between;
   margin-bottom: 67px;
 
-  @media (max-width: 576px) {
+  @media (max-width: 991.98px) {
     flex-direction: column;
     align-items: start;
     margin: 0;
@@ -132,7 +133,7 @@
     margin: 0;
   }
 
-  @media (max-width: 991.98px) {
+  @media (max-width: 576px) {
     flex-direction: column;
     align-items: start;
     margin: 0;
@@ -143,16 +144,23 @@
     margin-bottom: 33px;
     width: 200px;
 
+    @media (max-width: 991.98px) {
+      margin-bottom: 33px;
+      width: 100%;
+    }
+
+    @media (max-width: 767px) {
+      @include font_titles_text(30px, #000000);
+      margin-bottom: 55px;
+      width: 100%;
+    }
+
     @media(max-width: 576px) {
       @include font_titles_text(25px, #000000);
       margin-bottom: 25px;
       width: 100%;
     }
 
-    @media (max-width: 991.98px) {
-      margin-bottom: 33px;
-      width: 100%;
-    }
   }
 
   .services_table_column {
