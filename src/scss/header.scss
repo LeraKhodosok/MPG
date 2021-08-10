@@ -36,8 +36,22 @@
 .main {
   background: linear-gradient(360deg, #000000 4.66%, rgba(0, 0, 0, 0) 76.78%), url(../img/main.png);
   background-size: cover;
+  position: relative;
 
   //height: 100vh;
+}
+
+section {
+  position: relative;
+}
+
+.container * {
+  z-index: 3;
+}
+
+p {
+  position: relative;
+  background: transparent;
 }
 
 .lines {
