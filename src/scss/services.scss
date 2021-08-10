@@ -9,18 +9,60 @@
   font-family: "Sofia Pro Bold",sans-serif;
   font-size: $fz;
   color: #000000;
-  line-height: 42px;
+  line-height: 80px;
+}
+
+@mixin font_titles($fz, $clr) {
+  font-family: Alata, sans-serif;
+  font-size: $fz;
+  color: $clr;
+}
+
+@mixin font_titles_text($fz, $clr) {
+  font-family: "Sofia Pro Bold", sans-serif;
+  color: $clr;
+  font-size: $fz;
 }
 
 .section_services {
   padding-top: 101px;
-  padding-bottom: 91-47px;
+  padding-bottom: 92px;
   background-color: #F6D330;
 
-  .section_title {
+  @media(max-width: 576px) {
+    padding-bottom: 62-56px;
+  }
 
-    &.black {
-      margin-bottom: 95px;
+  @media(max-width: 767.98px) {
+    padding-top: 81px;
+    padding-bottom: 36px;
+  }
+
+  @media (max-width: 991.98px) {
+    padding-top: 91px;
+    padding-bottom: 56px;
+  }
+
+  .section_title_services {
+
+    @include font_titles(90px, black);
+    text-align: left;
+    position: relative;
+    margin-bottom: 113px;
+
+    @media(max-width: 576px) {
+      @include font_titles(40px, black);
+      margin-bottom: 63px;
+    }
+
+    @media(max-width: 767.98px) {
+      @include font_titles(50px, black);
+      margin-bottom: 93px;
+    }
+
+    @media (max-width: 991.98px) {
+      @include font_titles(60px, black);
+      margin-bottom: 113px;
     }
 
     &:after {
@@ -29,8 +71,22 @@
       width: 100px;
       height: 6px;
       background-color: #FFFFFF;
-      bottom: -50px;
+      bottom: -62px;
       left: 0;
+
+      @media(max-width: 576px) {
+        bottom: -35px;
+        width: 65px;
+        height: 4px;
+      }
+
+      @media(max-width: 767.98px) {
+        bottom: -45px;
+      }
+
+      @media (max-width: 991.98px) {
+        bottom: -62px;
+      }
     }
   }
 
@@ -39,23 +95,99 @@
     width: 837px;
     padding: 0;
     text-align: left;
-    margin-bottom: 47px;
+
+    @media(max-width: 576px) {
+      @include font_text(14px, #0B0D21, 24px);
+      width: 100%;
+      margin-bottom: 56px;
+    }
+
+    @media(max-width: 767.98px) {
+      @include font_text(16px, #0B0D21, 24px);
+      width: 100%;
+      margin-bottom: 56px;
   }
+
+    @media (max-width: 991.98px) {
+      @include font_text(18px, #0B0D21, 26px);
+      width: 100%;
+      margin-bottom: 56px;
+    }
 }
 
 .services_table {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 67px;
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+    align-items: start;
+    margin: 0;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: start;
+    margin: 0;
+  }
+
+  @media (max-width: 991.98px) {
+    flex-direction: column;
+    align-items: start;
+    margin: 0;
+  }
 
   .table_title {
-    @include font_tables(40px);
-    width: 300px;
+    @include font_titles_text(40px, #000000);
     margin-bottom: 33px;
+    width: 200px;
+
+    @media(max-width: 576px) {
+      @include font_titles_text(25px, #000000);
+      margin-bottom: 25px;
+      width: 100%;
+    }
+
+    @media (max-width: 991.98px) {
+      margin-bottom: 33px;
+      width: 100%;
+    }
+  }
+
+  .services_table_column {
+
+    @media(max-width: 576px) {
+      margin-bottom: 54px;
+    }
+
+    @media(max-width: 767.98px) {
+      margin-bottom: 54px;
+    }
+
+    @media (max-width: 991.98px) {
+      margin-bottom: 54px;
+    }
   }
 
   .table_list {
     padding: 0;
-    margin: 0;
+
+    &:last-child {
+      margin-bottom: 41px;
+
+      @media(max-width: 576px) {
+        margin-bottom: 27px;
+      }
+
+      @media(max-width: 767.98px) {
+        margin-bottom: 37px;
+      }
+
+      @media (max-width: 991.98px) {
+        margin-bottom: 41px;
+      }
+    }
   }
 
   li {
@@ -65,6 +197,27 @@
     line-height: 20px;
     padding-bottom: 10px;
     text-align: left;
+    display: flex;
+    color: #0B0D21;
+
+    @media(max-width: 576px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    @media(max-width: 767.98px) {
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+    @media (max-width: 991.98px) {
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    @media (max-width: 1200px) {
+      margin-right: 10px;
+    }
   }
 
   li:before {
@@ -75,10 +228,9 @@
   }
 
   .arrow {
-    margin-top: 41px;
     margin-left: 20px;
-    margin-bottom: 67px;
   }
+}
 }
 
 

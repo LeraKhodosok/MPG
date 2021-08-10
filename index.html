@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
     <link rel="stylesheet" href="./build/css/style.min.css">
 </head>
@@ -16,7 +17,7 @@
 <div class="main">
     <div class="container">
         <header class="main_header">
-            <img src="./src/img/logo.svg" alt="">
+            <img src="./src/img/logo.svg" alt="" class="main_logo">
             <nav class="main_link">
                 <a class="link" href="#about_block">About</a>
                 <a class="link" href="#services_block">Services</a>
@@ -31,18 +32,18 @@
                 creation. We offer services to clients in energy,
                 water, manufacturing and transportation sectors.
             </p>
-            <button class="btn">
+            <button class="btn_main">
                 <b>CONTACT US</b>
                 <img src="./src/img/btn_logo.png" alt="" class="logo">
             </button>
-            <p class="scroll">Scroll for more</p>
+            <a href="#about_block" class="scroll">Scroll for more</a>
         </div>
     </div>
 </div>
 
 <section class="section">
     <div class="container" id="about_block">
-        <h2 class="section_title black">About Us</h2>
+        <h2 class="section_title_about">About Us</h2>
         <div class="section_about_info">
             <img class="about_img" src="./src/img/about_img.jpg" alt="">
             <div class="section_about">
@@ -68,7 +69,7 @@
 
 <section class="section_services">
     <div class="container" id="services_block">
-        <h2 class="section_title black">Services</h2>
+        <h2 class="section_title_services">Services</h2>
         <p class="section_services text">
             Our clients are at the forefront of energy transition and innovation.
             Their task is complex: balance reliability and cost effectiveness with
@@ -77,7 +78,7 @@
             deep expertise to addressing these challenges.
         </p>
         <div class="services_table">
-            <div class="services_table_column1">
+            <div class="services_table_column">
                 <h3 class="table_title">Enterprise Strategy</h3>
                 <ul class="table_list">
                     <li>Procurement and investment diligence</li>
@@ -87,7 +88,7 @@
                 </ul>
                 <a href=""><img src="./src/img/arrow.png" alt="" class="arrow"></a>
             </div>
-            <div class="services_table_column2">
+            <div class="services_table_column">
                 <h3 class="table_title">Wholesale Power</h3>
                 <ul class="table_list">
                     <li>Commodity advisory and RFPs</li>
@@ -97,7 +98,7 @@
                 </ul>
                 <a href=""><img src="./src/img/arrow.png" alt="" class="arrow"></a>
             </div>
-            <div class="services_table_column3">
+            <div class="services_table_column">
                 <h3 class="table_title">Market Development</h3>
                 <ul class="table_list">
                     <li>New venture setup</li>
@@ -120,19 +121,19 @@
 <section class="section_contact">
     <div class="container" id="contact_block">
         <div class="container_email">
-            <h2 class="section_title white">Contact</h2>
+            <h2 class="section_title_contact">Contact</h2>
             <h3 class="contact_email_white">Email us here:</h3>
-            <h3 class="contact_email_yellow">info@marvelpowergroup.com</h3>
+            <a href="mailto:" class="contact_email_link">info@marvelpowergroup.com</a>
         </div>
         <div class="user_contact_info">
             <h3 class="user_contact_title">Stay in the loop by getting on our mailing list</h3>
             <form action="" class="form">
-                <input type="text" placeholder="NAME *" class="input">
-                <input type="text" placeholder="E-MAIL *" class="input">
+                <input aria-label="1" type="text" placeholder="NAME *" class="input">
+                <input aria-label="2" type="text" placeholder="E-MAIL *" class="input">
+                <button class="btn_send"><b>SEND</b>
+                    <img src="./src/img/btn_logo.png" alt="" class="logo">
+                </button>
             </form>
-            <button class="btn_send"><b>SEND</b>
-                <img src="./src/img/btn_logo.png" alt="" class="logo">
-            </button>
         </div>
     </div>
 </section>
