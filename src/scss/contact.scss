@@ -5,7 +5,7 @@
 }
 
 @mixin font_text($fz, $clr) {
-  font-family: "Sofia Pro Bold", sans-serif;
+  font-family: "Sofia Pro Medium", sans-serif;
   color: $clr;
   font-size: $fz;
 }
@@ -28,12 +28,12 @@
 
   @media (max-width: 991.98px) {
     padding-top: 101px;
-    padding-bottom: 288px;
+    padding-bottom: 200px;
   }
 
   @media(max-width: 767px) {
     padding-top: 75px;
-    padding-bottom: 220px;
+    padding-bottom: 150px;
   }
 
   @media(max-width: 576px) {
@@ -184,6 +184,7 @@
 
   @media(max-width: 576px) {
     width: 100%;
+    padding-top: 46px;
   }
 
   .user_contact_title {
@@ -204,8 +205,16 @@
 
     @media(max-width: 576px) {
       @include font_text(25px, #FFFFFF);
+      margin-bottom: 23px;
       text-align: left;
       width: 100%;
+    }
+
+    @media(max-width: 360px) {
+      @include font_text(25px, #FFFFFF);
+      margin-bottom: 23px;
+      text-align: left;
+      width: 190px;
     }
   }
 

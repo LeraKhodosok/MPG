@@ -11320,9 +11320,9 @@ textarea.form-control-lg {
 @media (max-width: 576px) {
   .main_text .text {
     font-family: Alata, sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     color: #FFFFFF;
-    line-height: 80px;
+    line-height: 60px;
     margin-bottom: 18px;
   }
 }
@@ -11420,10 +11420,6 @@ textarea.form-control-lg {
     display: none;
   }
 }
-.main_text .main_logo {
-  width: 100%;
-  height: 100%;
-}
 
 .section {
   background: #fff;
@@ -11516,7 +11512,7 @@ textarea.form-control-lg {
     display: flex;
     justify-content: start;
     align-items: center;
-    padding-bottom: 140px;
+    padding-bottom: 93px;
   }
 }
 @media (max-width: 767.98px) {
@@ -11624,6 +11620,7 @@ textarea.form-control-lg {
 }
 @media (max-width: 576px) {
   .section_services {
+    padding-top: 54px;
     padding-bottom: 6px;
   }
 }
@@ -11656,7 +11653,7 @@ textarea.form-control-lg {
     font-family: Alata, sans-serif;
     font-size: 40px;
     color: black;
-    margin-bottom: 63px;
+    margin-bottom: 64px;
   }
 }
 .section_services .section_title_services:after {
@@ -11700,7 +11697,7 @@ textarea.form-control-lg {
     font-family: "Sofia Pro Regular", sans-serif;
     font-size: 18px;
     color: #0B0D21;
-    line-height: 26px;
+    line-height: 24px;
     width: 100%;
     margin-bottom: 56px;
   }
@@ -11722,6 +11719,16 @@ textarea.form-control-lg {
     color: #0B0D21;
     line-height: 24px;
     width: 100%;
+    margin-bottom: 56px;
+  }
+}
+@media (max-width: 360px) {
+  .section_services.text {
+    font-family: "Sofia Pro Regular", sans-serif;
+    font-size: 14px;
+    color: #0B0D21;
+    line-height: 24px;
+    width: 280px;
     margin-bottom: 56px;
   }
 }
@@ -11786,6 +11793,9 @@ textarea.form-control-lg {
   .section_services .services_table .services_table_column {
     margin-bottom: 54px;
   }
+  .section_services .services_table .services_table_column:last-child {
+    margin-bottom: 40px;
+  }
 }
 @media (max-width: 767.98px) {
   .section_services .services_table .services_table_column {
@@ -11830,7 +11840,7 @@ textarea.form-control-lg {
 }
 @media (max-width: 576px) {
   .section_services .services_table li {
-    font-size: 14px;
+    font-size: 14px !important;
     line-height: 16px;
   }
 }
@@ -11868,6 +11878,12 @@ textarea.form-control-lg {
 .container * {
   z-index: 3;
 }
+@media (max-width: 576px) {
+  .container .main_logo {
+    width: 100px;
+    height: 38px;
+  }
+}
 
 section {
   position: relative;
@@ -11886,13 +11902,13 @@ p {
 @media (max-width: 991.98px) {
   .section_contact {
     padding-top: 101px;
-    padding-bottom: 288px;
+    padding-bottom: 200px;
   }
 }
 @media (max-width: 767px) {
   .section_contact {
     padding-top: 75px;
-    padding-bottom: 220px;
+    padding-bottom: 150px;
   }
 }
 @media (max-width: 576px) {
@@ -12007,34 +12023,34 @@ p {
   }
 }
 .container_email .contact_email_white {
-  font-family: "Sofia Pro Bold", sans-serif;
+  font-family: "Sofia Pro Medium", sans-serif;
   color: #FFFFFF;
   font-size: 40px;
   width: 300px;
 }
 @media (max-width: 991.98px) {
   .container_email .contact_email_white {
-    font-family: "Sofia Pro Bold", sans-serif;
+    font-family: "Sofia Pro Medium", sans-serif;
     color: #FFFFFF;
     font-size: 25px;
   }
 }
 @media (max-width: 767.98px) {
   .container_email .contact_email_white {
-    font-family: "Sofia Pro Bold", sans-serif;
+    font-family: "Sofia Pro Medium", sans-serif;
     color: #FFFFFF;
     font-size: 30px;
   }
 }
 @media (max-width: 576px) {
   .container_email .contact_email_white {
-    font-family: "Sofia Pro Bold", sans-serif;
+    font-family: "Sofia Pro Medium", sans-serif;
     color: #FFFFFF;
     font-size: 25px;
   }
 }
 .container_email .contact_email_link {
-  font-family: "Sofia Pro Bold", sans-serif;
+  font-family: "Sofia Pro Medium", sans-serif;
   color: #F6D330;
   font-size: 40px;
   text-decoration: none;
@@ -12042,7 +12058,7 @@ p {
 }
 @media (max-width: 991.98px) {
   .container_email .contact_email_link {
-    font-family: "Sofia Pro Bold", sans-serif;
+    font-family: "Sofia Pro Medium", sans-serif;
     color: #F6D330;
     font-size: 25px;
     word-break: break-word;
@@ -12051,7 +12067,7 @@ p {
 }
 @media (max-width: 767.98px) {
   .container_email .contact_email_link {
-    font-family: "Sofia Pro Bold", sans-serif;
+    font-family: "Sofia Pro Medium", sans-serif;
     color: #F6D330;
     font-size: 30px;
     word-break: break-word;
@@ -12060,7 +12076,7 @@ p {
 }
 @media (max-width: 576px) {
   .container_email .contact_email_link {
-    font-family: "Sofia Pro Bold", sans-serif;
+    font-family: "Sofia Pro Medium", sans-serif;
     color: #F6D330;
     font-size: 25px;
     word-break: break-word;
@@ -12085,17 +12101,18 @@ p {
 @media (max-width: 576px) {
   .user_contact_info {
     width: 100%;
+    padding-top: 46px;
   }
 }
 .user_contact_info .user_contact_title {
-  font-family: "Sofia Pro Bold", sans-serif;
+  font-family: "Sofia Pro Medium", sans-serif;
   color: #FFFFFF;
   font-size: 40px;
   margin-bottom: 41px;
 }
 @media (max-width: 991.98px) {
   .user_contact_info .user_contact_title {
-    font-family: "Sofia Pro Bold", sans-serif;
+    font-family: "Sofia Pro Medium", sans-serif;
     color: #FFFFFF;
     font-size: 25px;
     text-align: left;
@@ -12104,7 +12121,7 @@ p {
 }
 @media (max-width: 767.98px) {
   .user_contact_info .user_contact_title {
-    font-family: "Sofia Pro Bold", sans-serif;
+    font-family: "Sofia Pro Medium", sans-serif;
     color: #FFFFFF;
     font-size: 30px;
     text-align: left;
@@ -12113,11 +12130,22 @@ p {
 }
 @media (max-width: 576px) {
   .user_contact_info .user_contact_title {
-    font-family: "Sofia Pro Bold", sans-serif;
+    font-family: "Sofia Pro Medium", sans-serif;
     color: #FFFFFF;
     font-size: 25px;
+    margin-bottom: 23px;
     text-align: left;
     width: 100%;
+  }
+}
+@media (max-width: 360px) {
+  .user_contact_info .user_contact_title {
+    font-family: "Sofia Pro Medium", sans-serif;
+    color: #FFFFFF;
+    font-size: 25px;
+    margin-bottom: 23px;
+    text-align: left;
+    width: 190px;
   }
 }
 .user_contact_info .input {
