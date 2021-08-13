@@ -190,6 +190,7 @@
   .user_contact_title {
     @include font_text(40px, #FFFFFF);
     margin-bottom: 41px;
+    width: 300px;
 
     @media (max-width: 991.98px) {
       @include font_text(25px, #FFFFFF);
